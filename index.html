@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="referrer" content="no-referrer">
+<title>Instalar o TussTV</title>
+<style>
+  :root { --bg:#0b0f1a; --card:#151b2b; --line:#26304a; --txt:#e8ecf4; --mut:#8b96b0; --acc:#4cc9f0; --ok:#5ee6a8; --warn:#ffd166; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(900px 500px at 50% -10%, #16314a 0%, var(--bg) 60%) no-repeat, var(--bg); color:var(--txt); font:17px/1.6 system-ui,Segoe UI,Roboto,sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:28px 18px 60px; }
+  h1 { font-size:36px; margin:8px 0 4px; } h1 b { color:var(--acc); }
+  h2 { font-size:24px; margin:40px 0 12px; }
+  p { color:var(--mut); margin:8px 0; }
+  .hero { text-align:center; padding:28px 0 8px; }
+  .btn { display:inline-block; background:var(--acc); color:#04202a; font-weight:700; font-size:20px; padding:16px 34px; border-radius:50px; text-decoration:none; margin:18px 0 8px; }
+  .btn:focus, .btn:hover { background:#fff; }
+  .hash { font:13px ui-monospace,Consolas,monospace; color:var(--mut); word-break:break-all; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; margin:16px 0; }
+  .step { display:grid; grid-template-columns:1fr; gap:14px; }
+  @media (min-width:720px) { .step { grid-template-columns:1fr 1fr; align-items:center; } }
+  .step img { width:100%; border-radius:12px; border:1px solid var(--line); }
+  .n { display:inline-flex; width:34px; height:34px; border-radius:50%; background:var(--acc); color:#04202a; font-weight:800; align-items:center; justify-content:center; margin-right:10px; }
+  h3 { margin:0 0 6px; font-size:20px; display:flex; align-items:center; }
+  ul { color:var(--mut); padding-left:22px; } li { margin:6px 0; } li b, p b { color:var(--txt); }
+  .ok { color:var(--ok); } .warn { color:var(--warn); }
+  .tag { display:inline-block; font-size:13px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; margin:2px 4px 2px 0; color:var(--mut); }
+  footer { color:var(--mut); font-size:14px; text-align:center; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <h1>Tuss<b>TV</b></h1>
+    <p>Sua TV ao vivo: canais organizados, guia de programação e favoritos.</p>
+    <a class="btn" href="tusstv.apk" download>Baixar o app (APK)</a>
+    <p>Versão 0.2.0 · Android 6 ou mais novo · cerca de 2,7 MB</p>
+    <p class="hash">Conferência (SHA-256):<br>9e2bb0d8b90eb8dbbc68474cf844215252b2dba2e487fac60e2f7bad7d633f7d</p>
+  </div>
+
+  <h2>Antes de começar</h2>
+  <div class="card">
+    <p><span class="ok">Funciona</span> em TVs e aparelhos com <b>Android TV / Google TV</b>: Philips, Philco, Sony, TCL, Xiaomi (Mi Box/Mi TV), Chromecast com Google TV, Fire TV Stick e a maioria das TV boxes Android.</p>
+    <p><span class="warn">Não instala</span> em TVs que não são Android: <b>Samsung (Tizen)</b>, <b>LG (webOS)</b> e <b>Roku TV</b>. Nesses casos, use uma TV box ou um Chromecast com Google TV ligado na TV.</p>
+    <p>Você vai precisar do <b>celular</b> (para entrar pelo QR code) e de <b>internet</b> na TV.</p>
+  </div>
+
+  <h2>Passo a passo</h2>
+
+  <div class="card step">
+    <div><h3><span class="n">1</span>Permita instalar apps de fora da loja</h3>
+      <p>Na TV: <b>Configurações › Preferências do dispositivo › Segurança e restrições › Fontes desconhecidas</b>. Ligue a opção (ou permita para o app que você vai usar no passo 2). Em alguns modelos o aviso aparece só na hora de instalar.</p></div>
+    <img src="img/s1.svg" alt="Tela de configurações com Fontes desconhecidas ligada">
+  </div>
+
+  <div class="card step">
+    <div><h3><span class="n">2</span>Baixe o arquivo na TV</h3>
+      <p><b>Opção A (mais fácil):</b> abra a loja da TV, instale o app gratuito <b>Downloader</b>, abra e digite o endereço desta página (o link que enviamos).</p>
+      <p><b>Opção B:</b> no computador ou celular, baixe o arquivo, copie para um <b>pendrive</b>, ligue na TV e abra o arquivo pelo gerenciador de arquivos.</p></div>
+    <img src="img/s2.svg" alt="App Downloader com o campo de endereço">
+  </div>
+
+  <div class="card step">
+    <div><h3><span class="n">3</span>Instale</h3>
+      <p>Quando perguntar <b>"Instalar TussTV?"</b>, escolha <b>Instalar</b> e depois <b>Abrir</b>. Se a TV avisar que o app não vem da loja, é normal: o arquivo é este mesmo (confira a sequência SHA-256 acima, se quiser).</p></div>
+    <img src="img/s3.svg" alt="Janela de confirmação de instalação">
+  </div>
+
+  <div class="card step">
+    <div><h3><span class="n">4</span>Entre com o celular</h3>
+      <p>O app mostra um <b>QR code</b>. Aponte a câmera do celular, digite o seu e-mail, abra o link que chegar e toque em <b>Autorizar TV</b>. A TV entra sozinha.</p>
+      <p>Na primeira vez, o seu acesso fica <b>aguardando liberação</b> do administrador; assim que for liberado, os canais aparecem sozinhos.</p></div>
+    <img src="img/login.png" alt="Tela de entrada do TussTV com QR code">
+  </div>
+
+  <h2>Como usar</h2>
+  <div class="card">
+    <ul>
+      <li><b>Favoritar:</b> segure o botão <b>OK</b> sobre um canal. Ele aparece em "Favoritos" e na tela inicial.</li>
+      <li><b>Guia:</b> a aba <b>Guia</b> mostra o que passa agora (com barra de progresso) e o que vem a seguir. Dentro do canal, aparecem programa atual e próximo.</li>
+      <li><b>Trocar de canal:</b> com o canal aberto, use <b>↑ ↓</b> (ou CH+/CH−).</li>
+      <li><b>Buscar:</b> botão <b>Buscar</b> no topo; a TV usa o teclado da tela.</li>
+      <li><b>Canais 18+:</b> pedem PIN (padrão <b>0000</b>). Troque em <b>Ajustes › Alterar PIN</b>.</li>
+    </ul>
+  </div>
+
+  <h2>Recomendações</h2>
+  <div class="card">
+    <ul>
+      <li>Prefira <b>internet por cabo</b> ou Wi-Fi 5 GHz perto do roteador; para HD, 10 Mbps por TV costuma bastar.</li>
+      <li>Se um canal travar, o app tenta sozinho outra fonte; se não voltar, aperte <b>OK</b> para tentar de novo ou troque de canal.</li>
+      <li>Sem internet por instantes, o app continua abrindo com a última lista salva.</li>
+      <li>Mantenha o app atualizado: quando enviarmos uma versão nova, baixe de novo por este mesmo link (os favoritos ficam).</li>
+      <li>Não compartilhe este link nem o seu acesso. Baixe apenas por aqui.</li>
+      <li>Em TVs com pouca memória, feche outros apps antes de abrir o TussTV. O modo leve liga sozinho.</li>
+    </ul>
+    <p><span class="tag">Dúvida?</span> fale com quem enviou este link.</p>
+  </div>
+
+  <footer>TussTV · página privada · não indexada</footer>
+</main>
+</body>
+</html>
